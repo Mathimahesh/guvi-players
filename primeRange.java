@@ -4,7 +4,7 @@ public class MyClass {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        int flag = 0;
+        int flag = 0,count = 0;
         for(int i=a;i<=b;i++){
             flag=0;
             for(int j =2;j<i;j++){
@@ -14,8 +14,10 @@ public class MyClass {
                 }
             }
             if(flag!=1){
-                System.out.println(i);
+                count++;
+                
             }
         }
+        System.out.println(count);
     }
 }
